@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dataku Kesbangpol</title>
+  <!-- <meta name="description" content="Dataku Kesbangpol Badung adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung.">
+
+  <meta property="og:url" content="https://bakesbangpol.badungkab.go.id/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dataku Kesbangpol" />
+  <meta property="og:description" content="Dataku Kesbangpol Badung adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung." />
+  <meta property="og:image" itemprop="image" content="https://bakesbangpol.badungkab.go.id/badung.png" /> -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDE339F4Y9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PDE339F4Y9', 'auto');
+  </script> -->
+
+  <link rel="icon" type="image/png" href="assets/img/logo-badung.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.21.0/tabler-icons.css" integrity="sha512-rv1OTNrp6tcVCpPawe6kNtOJSQz3T1ZPpCpy9ZVTtE6XSopXVWQiaLhNWPR4aBYinfDzf62j0t0N2+oS9VrVBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader-container">
+    <div class="col">
+      <!-- Chase -->
+      <div class="sk-chase sk-primary">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-example navbar-expand-lg navbar-transparent shadow-sm fixed-top">
+    <div class="container">
+      <div class="col-12 d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="assets/img/logo-header.png" alt="Logo Header" height="40">
+        </a>
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-4">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-ex-4">
+            <div class="navbar-nav me-auto">
+              <a class="nav-item nav-link" href="javascript:void(0)">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-5 px-3" style="background-image: url('assets/img/bg-hero.png'); background-size: cover; background-position: center;">
+    <div class="container mt-5">
+      <div class="row justify-content-evenly align-items-center mt-5">
+        <div class="col-md-5 text-center">
+          <h2 class="text-center text-danger fw-bolder mb-0">Dataku Kesbangpol</h2>
+          <svg width="100" height="10" viewBox="0 0 828 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="2.5" x2="828" y2="2.5" stroke="#CC0000" stroke-width="12" />
+          </svg>
+          <p class="text-center mt-2">
+            <span class="fw-medium text-light-emphasis">Dataku Kesbangpol Badung </span>adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung.
+          </p>
+        </div>
+        <div class="col-md-5 text-center py-3">
+          <img src="assets/img/hero.png" alt="Hero" class="img-fluid" width="350">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 px-3">
+    <div class="container">
+      <div class="text-center">
+        <h4 class="text-center text-danger fw-semibold mb-0">Data Kesbangpol</h4>
+        <svg width="80" height="10" viewBox="0 0 828 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="2.5" x2="828" y2="2.5" stroke="#CC0000" stroke-width="12" />
+        </svg>
+        <p class="text-center text-light-emphasis mt-1">
+          Telusuri data Kesbangpol Badung yang mendukung transparansi dan akses informasi masyarakat.
+        </p>
+      </div>
+      <div style="height: 90vh;" class="overflow-auto row list-container justify-content-center mt-5" id="list-container">
+        <!-- Daftar item akan diisi di sini -->
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header bg-light d-flex align-items-center">
+              <button type="button" class="btn btn-danger p-2 py-1"><i class="ti ti-database"></i></button>
+              <h5 class="modal-title ms-1 text-secondary" id="exampleModalLabel">Data Preview</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="list-data"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-5 px-3" style="background-image: url('assets/img/bg-hero.png'); background-size: cover; background-position: center;">
+    <div class="text-center pt-3">
+      <h4 class="text-center text-danger mb-0">Kontak Kami</h4>
+      <svg width="80" height="10" viewBox="0 0 828 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="2.5" x2="828" y2="2.5" stroke="#CC0000" stroke-width="12" />
+      </svg>
+      <div class="text-light-emphasis mt-1">
+        <p class="m-0">
+          JL. Raya Sempidi, Mangupura - Badung, Denpasar, Bali, Sempidi, Mengwi, Badung Regency, Bali 80351
+        </p>
+        <p class="m-0">Telp: (0361) 9009252</p>
+        <p>Email: kesbangpolbadung@gmail.com</p>
+      </div>
+      <p class="fw-medium bg-white m-0 py-2">© <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Pemerintah Kabupaten Badung
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) { // Ketika di-scroll lebih dari 50px
+        navbar.classList.add('navbar-scrolled');
+        navbar.classList.remove('navbar-transparent');
+      } else { // Ketika di posisi atas halaman
+        navbar.classList.add('navbar-transparent');
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+  </script>
+
+  <script>
+    // Fungsi untuk mengambil data dari API
+    function fetchData() {
+      $.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbwGSjTPMjQg59tJsvS-Dn8-URzmvK6AOVlT3hHhnKqC1sntzBml53LgKmXMngXBX-4NoQ/exec',
+        method: 'GET',
+        success: function (data) {
+          renderList(data); // Panggil fungsi untuk render data ke HTML
+        },
+        error: function (error) {
+          console.error('Error fetching data:', error);
+        }
+      });
+    }
+
+    // Fungsi untuk menampilkan data ke HTML
+    function renderList(data) {
+      const listContainer = document.getElementById('list-container');
+      let html = '';
+
+      data.forEach(item => {
+        html += `
+  <div class="col-md-4 mb-3">
+    <a href="javascript:void(0)" class="text-decoration-none text-dark-emphasis" onclick='showModalPreview(${JSON.stringify(item.data)})'>
+      <div class="d-flex flex-md-column justify-content-md-center align-items-center border border-secondary border-opacity-25 rounded rounded-3 px-3 py-2 py-md-3 hover-effect">
+        <img src="assets/img/Icon Data.png" alt="icon" class="me-2 mb-md-2" style="width: 45px; height: 45px;" />
+        <p class="d-none d-md-block fw-medium text-center mb-1">${item.category}</p>
+        <p class="d-block d-md-none mb-0">${item.category}</p>
+        <div style="height: 60px;" class="mb-auto d-none d-md-block text-md-center ">
+          <small class="text-light-emphasis">
+            ${item.desc.length > 100 ? item.desc.substring(0, 80) + '...' : item.desc}
+          </small>
+        </div>
+      </div>
+    </a>
+  </div>
+  `;
+      });
+      // Update konten div dengan HTML yang dihasilkan
+      listContainer.innerHTML = html;
+      // Sembunyikan loader setelah data dirender
+      $('#loader').hide();
+    }
+
+    function showModalPreview(data) {
+      const listData = document.getElementById('list-data');
+      let html = '';
+
+      data.forEach(item => {
+        // Ambil ID file dari URL
+        const fileId = item.fileUrl.split('id=')[1];
+        const previewUrl = `https://drive.google.com/file/d/${fileId}/preview`;
+        console.log(fileId)
+
+        // Template HTML untuk menampilkan data
+        html += `
+  <div class="border border-secondary border-opacity-25 rounded rounded-3 overflow-hidden">
+    <div class="col bg-light d-flex justify-between align-items-center px-2 px-md-3 border-bottom border-secondary border-opacity-25">
+      <div class="col-8 py-2">
+        <blockquote class="text-danger fw-medium mb-0">
+          <p>${item.title}</p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-0">
+          ${item.desc || "Tidak ada deskripsi"}
+        </figcaption>
+      </div>
+      <div class="col-4 text-end">
+        <a href="https://drive.usercontent.google.com/uc?id=${fileId}&export=download" class="text-danger">Download</a>
+      </div>
+    </div>
+    <div class="px-1 pt-1">
+      <iframe class="rounded rounded-2" src="${previewUrl}" width="100%" height="480" allow="autoplay"></iframe>
+    </div>
+  </div>
+  `;
+      });
+
+      // Update konten div dengan HTML yang dihasilkan
+      listData.innerHTML = html;
+
+      // Tampilkan modal
+      $('#exampleModal').modal('show');
+    }
+
+    fetchData();
+  </script>
+
+</body>
+
+</html>
