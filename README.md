@@ -1,1 +1,2 @@
-# dataku-kesbangpol
+## Dataku Kesbangpol
+Dataku Kesbangpol Badung adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung.
