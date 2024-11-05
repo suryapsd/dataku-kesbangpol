@@ -180,21 +180,21 @@
 
       data.forEach(item => {
         html += `
-  <div class="col-md-4 mb-3">
-    <a href="javascript:void(0)" class="text-decoration-none text-dark-emphasis" onclick='showModalPreview(${JSON.stringify(item.data)})'>
-      <div class="d-flex flex-md-column justify-content-md-center align-items-center border border-secondary border-opacity-25 rounded rounded-3 px-3 py-2 py-md-3 hover-effect">
-        <img src="assets/img/Icon Data.png" alt="icon" class="me-2 mb-md-2" style="width: 45px; height: 45px;" />
-        <p class="d-none d-md-block fw-medium text-center mb-1">${item.category}</p>
-        <p class="d-block d-md-none mb-0">${item.category}</p>
-        <div style="height: 60px;" class="mb-auto d-none d-md-block text-md-center ">
-          <small class="text-light-emphasis">
-            ${item.desc.length > 100 ? item.desc.substring(0, 80) + '...' : item.desc}
-          </small>
-        </div>
-      </div>
-    </a>
-  </div>
-  `;
+          <div class="col-md-4 mb-3">
+            <a href="javascript:void(0)" class="text-decoration-none text-dark-emphasis" onclick='showModalPreview(${JSON.stringify(item.data)})'>
+              <div class="d-flex flex-md-column justify-content-md-center align-items-center border border-secondary border-opacity-25 rounded rounded-3 px-3 py-2 py-md-3 hover-effect">
+                <img src="assets/img/Icon Data.png" alt="icon" class="me-2 mb-md-2" style="width: 45px; height: 45px;" />
+                <p class="d-none d-md-block fw-medium text-center mb-1">${item.category}</p>
+                <p class="d-block d-md-none mb-0">${item.category}</p>
+                <div style="height: 60px;" class="mb-auto d-none d-md-block text-md-center ">
+                  <small class="text-light-emphasis">
+                    ${item.desc.length > 100 ? item.desc.substring(0, 80) + '...' : item.desc}
+                  </small>
+                </div>
+              </div>
+            </a>
+          </div>
+        `;
       });
       // Update konten div dengan HTML yang dihasilkan
       listContainer.innerHTML = html;
@@ -214,25 +214,25 @@
 
         // Template HTML untuk menampilkan data
         html += `
-  <div class="border border-secondary border-opacity-25 rounded rounded-3 overflow-hidden">
-    <div class="col bg-light d-flex justify-between align-items-center px-2 px-md-3 border-bottom border-secondary border-opacity-25">
-      <div class="col-8 py-2">
-        <blockquote class="text-danger fw-medium mb-0">
-          <p>${item.title}</p>
-        </blockquote>
-        <figcaption class="blockquote-footer mb-0">
-          ${item.desc || "Tidak ada deskripsi"}
-        </figcaption>
-      </div>
-      <div class="col-4 text-end">
-        <a href="https://drive.usercontent.google.com/uc?id=${fileId}&export=download" class="text-danger">Download</a>
-      </div>
-    </div>
-    <div class="px-1 pt-1">
-      <iframe class="rounded rounded-2" src="${previewUrl}" width="100%" height="480" allow="autoplay"></iframe>
-    </div>
-  </div>
-  `;
+          <div class="border border-secondary border-opacity-25 rounded rounded-3 overflow-hidden mb-3">
+            <div class="col bg-light d-flex justify-between align-items-center px-2 px-md-3 border-bottom border-secondary border-opacity-25">
+              <div class="col-8 py-2">
+                <blockquote class="text-danger fw-medium mb-0">
+                  <p>${item.title}</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mb-0">
+                  ${item.desc || "Tidak ada deskripsi"}
+                </figcaption>
+              </div>
+              <div class="col-4 text-end">
+                <a href="https://drive.usercontent.google.com/uc?id=${fileId}&export=download" class="text-danger">Download</a>
+              </div>
+            </div>
+            <div class="px-1 pt-1">
+              <iframe class="rounded rounded-2" src="${previewUrl}" width="100%" height="480" allow="autoplay"></iframe>
+            </div>
+          </div>
+        `;
       });
 
       // Update konten div dengan HTML yang dihasilkan
