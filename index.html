@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Dataku Kesbangpol</title>
-  <!-- <meta name="description" content="Dataku Kesbangpol Badung adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung.">
+  <meta name="description" content="Dataku Kesbangpol Badung adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung.">
 
   <meta property="og:url" content="https://bakesbangpol.badungkab.go.id/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Dataku Kesbangpol" />
   <meta property="og:description" content="Dataku Kesbangpol Badung adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung." />
-  <meta property="og:image" itemprop="image" content="https://bakesbangpol.badungkab.go.id/badung.png" /> -->
+  <meta property="og:image" itemprop="image" content="https://bakesbangpol.badungkab.go.id/badung.png" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDE339F4Y9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDE339F4Y9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -24,7 +24,7 @@
     }
     gtag('js', new Date());
     gtag('config', 'G-PDE339F4Y9', 'auto');
-  </script> -->
+  </script>
 
   <link rel="icon" type="image/png" href="assets/img/logo-badung.png" />
 
@@ -73,12 +73,12 @@
   <section class="pt-5 px-3" style="background-image: url('assets/img/bg-hero.png'); background-size: cover; background-position: center;">
     <div class="container mt-5">
       <div class="row justify-content-evenly align-items-center mt-5">
-        <div class="col-md-5 text-center">
+        <div class="col-md-5 text-center my-5 my-md-1">
           <h2 class="text-center text-danger fw-bolder mb-0">Dataku Kesbangpol</h2>
           <svg width="100" height="10" viewBox="0 0 828 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="2.5" x2="828" y2="2.5" stroke="#CC0000" stroke-width="12" />
           </svg>
-          <p class="text-center mt-2">
+          <p class="text-center my-2">
             <span class="fw-medium text-light-emphasis">Dataku Kesbangpol Badung </span>adalah platform untuk mengelola dan menyajikan data secara terintegrasi guna memudahkan akses bagi masyarakat dan instansi pemerintah terkait kebijakan dan program Kesbangpol Badung.
           </p>
         </div>
@@ -141,7 +141,7 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -215,17 +215,14 @@
         // Template HTML untuk menampilkan data
         html += `
           <div class="border border-secondary border-opacity-25 rounded rounded-3 overflow-hidden mb-3">
-            <div class="col bg-light d-flex justify-between align-items-center px-2 px-md-3 border-bottom border-secondary border-opacity-25">
-              <div class="col-8 py-2">
-                <blockquote class="text-danger fw-medium mb-0">
-                  <p>${item.title}</p>
+            <div class="col bg-light d-flex justify-content-between px-2 px-md-3 border-bottom border-secondary border-opacity-25">
+              <div class="col-12 py-2">
+                <blockquote class="fw-medium mb-0">
+                  <p>${item.title} <a href="https://drive.usercontent.google.com/uc?id=${fileId}&export=download" class="text-danger">Download</a></p>
                 </blockquote>
                 <figcaption class="blockquote-footer mb-0">
                   ${item.desc || "Tidak ada deskripsi"}
                 </figcaption>
-              </div>
-              <div class="col-4 text-end">
-                <a href="https://drive.usercontent.google.com/uc?id=${fileId}&export=download" class="text-danger">Download</a>
               </div>
             </div>
             <div class="px-1 pt-1">
